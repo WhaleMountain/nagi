@@ -1,5 +1,8 @@
 # なんちゃってCompose
 
+docker client を使って docker の操作を楽しむ。
+でも docker compose ができないから実装してみよう的な。 ```libcompose```は保守されてないので使わない方向で。
+
 ## 環境
 
 - Go
