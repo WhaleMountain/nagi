@@ -32,3 +32,5 @@ curl でdocker container と compose ができるようになりました。
 ### 未実装
 - エラー処理
     - 何か1つでもエラーの場合 500 code のみを返している。そのためどこのエラーなのかわかりづらい。
+- イメージのpull機能
+    - docker image は pull している前提で動きます。
