@@ -17,11 +17,17 @@ docker client を使って docker の操作を楽しむ。
 
 パッケージのインストールを```go get```でもいいが、```"github.com/docker/go-connections/nat"```が入らないです。```"github.com/docker/docker/vendor```の中に同じ名前のやつがいるから。なのでパッケージのインストールは```dep```を使っています。
 
+
 ## 追記
 
 curl でdocker container と compose ができるようになりました。
 
-### 例
+## 実行
+```shell
+go run nagi.go
+```
+
+### 使い方の例
 
 - Container
     - ```curl http://localhost:8080/container -X POST -H "Content-Type: application/json" -d '{"conname": "nagi","images": "mysql:5.7","environment": ["-e","MYSQL_ROOT_PASSWORD=mysql"],"guestport": "3306","hostport": "3306","driver": "bridge"}'```

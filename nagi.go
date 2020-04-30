@@ -26,11 +26,4 @@ func main() {
 	
 	r := router()
 	r.Run()
-
-	//environment := [][]string{
-	//	{"-e", "MYSQL_ROOT_PASSWORD=mysql"},
-	//	{"-e", "WORDPRESS_DB_HOST=nagi-db", "WORDPRESS_DB_USER=root", "WORDPRESS_DB_PASSWORD=mysql"},
-	//}
-
-	//NewCompose(cli, ctx, []string{"nagi-db", "nagi-word"},[]string{"mysql:5.7", "wordpress:latest"}, environment, []string{"3306", "80"}, []string{"3306", "8080"}, netResp)
 }
